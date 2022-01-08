@@ -24,6 +24,28 @@ left = e.pageX + 'px', top = e.pageY + 'px';
 }
 </script>
 
+	
+	<script language="javascript" type="text/javascript">
+document.onkeydown = function checkKeycode(event)
+{
+var keycode;
+if(!event) var event = window.event;
+if (event.keyCode) keycode = event.keyCode; // IE
+else if(event.which) keycode = event.which; // все браузеры
+if (keycode==39) {
+$('#chel').animate({left: '+=20'},1000);
+}
+if (keycode==38) {
+$('#chel').animate({top: '-=20'},1000);
+}
+if (keycode==37) {
+$('#chel').animate({left: '-=20'},1000);
+}
+if (keycode==40) {
+$('#chel').animate({top: '+=20'},1000);
+}
+}
+</script>   
 </head>
 
 <body>
