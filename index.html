@@ -48,13 +48,16 @@ $('#chel').animate({top: '+=20'},1000);
 </script>   
 </head>
 
+	
+	<script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
+
+<script type="text/javascript">
+  VK.init({apiId: 7909769, onlyWidgets: true});
+</script>
 <body>
 <div>
 
-	<div id="vk_like"></div>
-<script type="text/javascript">
-  VK.Widgets.Like("vk_like", {type: "button", height: 22});
-</script>
+
 	
 <img id="pic" src="pngwing.com.png" style="position: absolute">
 
@@ -69,6 +72,10 @@ $('#chel').animate({top: '+=20'},1000);
   VK.Widgets.CommunityMessages("vk_community_messages", 210003950, {tooltipButtonText: "Хочешь пообщаться или нужна помощь? Пиши сюда!", expanded: 1});
 </script>
 	
+<div id="vk_like"></div>
+<script type="text/javascript">
+VK.Widgets.Like("vk_like", {type: "full", height: 24});
+</script>	
 	
 </body>
 
